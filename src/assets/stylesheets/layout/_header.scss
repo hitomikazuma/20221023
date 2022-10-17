@@ -1,0 +1,26 @@
+@use '../global' as g;
+
+.header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: g.getVw(50);
+  @include g.is-pc {
+    margin-top: 50px;
+  }
+  .inner {
+    padding: g.getVw(40);
+    @include g.is-pc {
+      padding: 0 40px;
+    }
+  }
+  .header_logo {
+    width: g.getVw(154);
+    height: auto;
+    @include g.is-pc {
+      width: 154px;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+@use '../global' as g;
+
+@keyframes bgNoise {
+  0% { background-position: 0 0; }
+  10% { background-position: -5% -5%; }
+  20% { background-position: -10% 5%; }
+  30% { background-position: 5% -10%; }
+  40% { background-position: -5% 15%; }
+  50% { background-position: -10% 5%; }
+  60% { background-position: 5% 5%; }
+  70% { background-position: 0 10%; }
+  80% { background-position: -5% -5%; }
+  90% { background-position: 10% 5%; }
+}
+
+.weddingInvitation {
+  padding: 100px 0;
+  background: url("../../../assets/images/noise.png"), #ebe6e2;
+  background-size: 300px 300px;
+  animation: 0.1s steps(10, end) 0s infinite alternate-reverse none running bgNoise;
+
+  .inner {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    opacity: 0.8;
+  }
+
+  .svg01 {
+    width: 300px;
+  }
+
+  .svg02 {
+    width: 170px;
+    margin-top: 50px;
+  }
+
+  .statement {
+    margin-top: 65px;
+    line-height: 2.2;
+    letter-spacing: 0.23rem;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    opacity: 0.9;
+    @include g.is-tablet {
+      line-height: 2;
+      text-align: center;
+      font-size: 2.1rem;
+    }
+    .pcDisBlock {
+      display: none;
+      @include g.is-tablet {
+        display: block;
+      }
+    }
+  }
+
+  .svg03 {
+    width: 180px;
+    margin-top: 60px;
+    opacity: 0.7;
+  }
+
+  .svg04 {
+    width: 180px;
+    margin-top: 30px;
+    opacity: 0.7;
+  }
+
+  .heading {
+    margin-top: 100px;
+    letter-spacing: 0.23rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    opacity: 0.9;
+    @include g.is-tablet {
+      font-size: 2.4rem;
+    }
+  }
+
+  .schedule {
+    margin-top: 25px;
+    letter-spacing: 0.23rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    opacity: 0.9;
+    @include g.is-tablet {
+      font-size: 2.1rem;
+    }
+    a {
+      text-decoration: underline;
+    }
+    &:last-child {
+      line-height: 1.6;
+    }
+  }
+
+  .map {
+    aspect-ratio: 16/9;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+}
+

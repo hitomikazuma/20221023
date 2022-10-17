@@ -1,0 +1,10 @@
+@use 'sass:math';
+
+@function lineHeight($DesignLineHeight, $fontSize) {
+  @return math.div($DesignLineHeight, $fontSize);
+}
+
+@function getVw($px) {
+  $base: 375;
+  @return math.div($px, $base) * 100vw
+}
