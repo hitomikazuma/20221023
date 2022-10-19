@@ -107,15 +107,14 @@ body {
   }
 
   .note {
-    margin-top: 10px;
-    line-height: 1.6;
+    margin-top: 30px;
+    line-height: 1.8;
     letter-spacing: 0.23rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     color: #333;
     opacity: 0.9;
     @include g.is-tablet {
-      font-size: 1.4rem;
     }
   }
 
