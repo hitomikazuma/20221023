@@ -39,16 +39,16 @@ body {
   }
 
   .svg01 {
-    width: 300px;
+    width: 285px;
   }
 
   .svg02 {
-    width: 170px;
-    margin-top: 40px;
+    width: 160px;
+    margin-top: 35px;
   }
 
   .statement {
-    margin-top: 65px;
+    margin-top: 60px;
     line-height: 2;
     letter-spacing: 0.23rem;
     text-align: left;
@@ -59,7 +59,7 @@ body {
     @include g.is-tablet {
       line-height: 2.2;
       text-align: center;
-      font-size: 1.8rem;
+      font-size: 1.7rem;
     }
     .pcDisBlock {
       display: none;
@@ -71,7 +71,7 @@ body {
 
   .svg03 {
     width: 180px;
-    margin-top: 60px;
+    margin-top: 55px;
     opacity: 0.7;
   }
 
@@ -92,15 +92,12 @@ body {
 
   .schedule {
     margin-top: 20px;
-    line-height: 1.6;
+    line-height: 1.5;
     letter-spacing: 0.23rem;
     font-size: 1.6rem;
     font-weight: bold;
     color: #333;
     opacity: 0.9;
-    @include g.is-tablet {
-      font-size: 1.8rem;
-    }
     a {
       text-decoration: underline;
     }
@@ -108,7 +105,7 @@ body {
 
   .note {
     margin-top: 30px;
-    line-height: 1.8;
+    line-height: 1.7;
     letter-spacing: 0.23rem;
     font-size: 1.4rem;
     font-weight: bold;
